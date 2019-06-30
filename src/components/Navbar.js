@@ -6,7 +6,7 @@ class Navbar extends Component {
 		return (
 			<nav>
         <ul class="nav-links">
-          <li><a href="#">About Me</a></li>
+          <li class="nav-links__one"><a href="#">About Me</a></li>
           <li><a href="#">My Work</a></li>
           <li><a href="#">Student Work</a></li>
         </ul>
