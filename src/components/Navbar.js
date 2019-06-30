@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+
+// CSS
 import '../css/Navbar.css';
+
+// Icons
 import { FaHome } from 'react-icons/fa';
-import { IconContext } from "react-icons";
 
 class Navbar extends Component {
 	render() {
 		return (
 			<nav>
         <ul className="nav-links">
-					<li className="nav-links__one"><a href="#"><FaHome className="home"/></a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">My Work</a></li>
-          <li><a href="#">Student Work</a></li>
+					<li className="nav-links__one"><Link to="/"><FaHome className="home"/></Link></li>
+          <li><Link to="/about">About Me</Link></li>
+          <li><Link to="/my-work">My Work</Link></li>
+          <li><Link to="/student-work">Student Work</Link></li>
         </ul>
-        <a className="nav-contact" href="#">Contact</a>
+        <Link to="/contact" className="nav-contact" href="#">Contact</Link>
       </nav>
 		)
 	}
