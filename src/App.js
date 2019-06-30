@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import Brand from './components/Brand';
 
 function App() {
   return (
     <div className="App">
 			<header>
 				<Navbar />
-	      <h1>Meghan Gosselin's Portfoilio</h1>
-
+	      <Brand />
 			</header>
     </div>
   );
