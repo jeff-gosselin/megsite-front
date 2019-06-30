@@ -54,3 +54,8 @@ nav {
   align-items: center;
   height: 80vh;
 }
+
+.home {
+	font-size: 1.6rem;
+	margin-top: -1.5px;
+}
