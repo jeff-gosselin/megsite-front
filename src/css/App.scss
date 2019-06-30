@@ -1,6 +1,14 @@
-header {
+.main {
   background-image: linear-gradient(rgba(240,179,255,1), rgba(240,179,255,0.1)), url('https://png.pngtree.com/back_origin_pic/04/14/87/7bd47818d2a10e2c81f7ff3011035012.jpg');
   background-size: cover;
   background-position: top center;
   height: 100vh;
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 90vh;
+	}
 }
