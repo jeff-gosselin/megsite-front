@@ -1,0 +1,19 @@
+.name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.initials {
+  height: 50vh;
+/*   margin: auto; */
+}
+
+.name h1 {
+  color: #fdfdfd;
+  font-size: 2.5rem;
+  font-family: 'Emilys Candy', cursive;
+  text-shadow: 1px 1px 3px #703380;
+}

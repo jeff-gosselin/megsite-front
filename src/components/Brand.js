@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/Brand.scss';
 
 const Brand = () => {
 	return (
