@@ -1,0 +1,11 @@
+// Applied Animations
+.about, .contact, .login, .my-work, .student-work, .name {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+
+// Animations
+@keyframes fadeIn {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
