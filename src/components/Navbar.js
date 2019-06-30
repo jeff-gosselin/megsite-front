@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import '../css/Navbar.css';
+import { FaBeer } from 'react-icons/fa';
 
 class Navbar extends Component {
 	render() {
 		return (
 			<nav>
-        <ul class="nav-links">
-          <li class="nav-links__one"><a href="#">About Me</a></li>
+        <ul className="nav-links">
+					<li className="nav-links__one"><FaBeer /></li>
+          <li><a href="#">About Me</a></li>
           <li><a href="#">My Work</a></li>
           <li><a href="#">Student Work</a></li>
         </ul>
-        <a class="nav-contact" href="#">Contact</a>
+        <a className="nav-contact" href="#">Contact</a>
       </nav>
 		)
 	}
