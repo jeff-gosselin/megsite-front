@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 nav {
   display: flex;
   justify-content: center;
@@ -5,7 +7,7 @@ nav {
   padding: 20px 80px 20px 80px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(180,82,204,.25);
-  font-family: 'Emilys Candy', cursive;
+  font-family: $font1;
 }
 
 .nav-links {
@@ -17,13 +19,13 @@ nav {
 
 .nav-links li a, .nav-contact {
   text-decoration: none;
-  color: #B452CC;
+  color: $clrMedium;
   font-size: 1.25rem;
   transition: all .5s ease;
 }
 
 .nav-links li a:hover {
-  color: #703380;
+  color: $clrDark;
 }
 
 .nav-links li:not(.nav-links__one) {
@@ -32,18 +34,18 @@ nav {
 
 .nav-contact {
   background-color: transparent;
-  border: 2px solid #B452CC;
+  border: 2px solid $clrMedium;
   padding: 6px 24px;
   border-radius: 60px;
   align-self: center;
   transition: all .5s ease;
-  color: #B452CC;
+  color: $clrMedium;
   text-shadow: none;
 }
 
 .nav-contact:hover {
-  background-color: #703380;
-  border: 2px solid #703380;
+  background-color: $clrDark;
+  border: 2px solid $clrDark;
   color: #fdfdfd;
 }
 

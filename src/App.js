@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 
 // CSS
 import './css/App.scss';
+import './css/animations.scss';
 
 // Components
 import Navbar from './components/Navbar';

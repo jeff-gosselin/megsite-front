@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 // CSS
-import '../css/Navbar.css';
+import '../css/Navbar.scss';
 
 // Icons
 import { FaHome } from 'react-icons/fa';

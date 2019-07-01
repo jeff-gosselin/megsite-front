@@ -1,6 +1,29 @@
-@import "animations.scss";
+@import './variables.scss';
 
 .contact {
-	animation-name: fadeIn;
-	animation-duration: 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50vw;
+	height: 80vh;
+	background-color: rgba(255,255,255, .75);
+	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+
+	form {
+		width: 80%;
+		text-align: center;
+
+	}
+
+	input, textarea {
+		display: block;
+		width: 100%;
+		padding: .7rem;
+		border-radius: 3px;
+		border: 1px solid #aaa;
+		font-size: 1.6rem;
+		color: $clrDark;
+		outline: none;
+	}
 }

@@ -1,18 +1,4 @@
-/*********************
-Light - #F0B3FF   rgb(240,179,255)
-Medium - #B452CC  rgb(180,82,204)
-Dark - #703380
-Gray - #785980
-Saturated - #E066FF
-**********************/
-$clrLight: #F0B3FF;
-$clrDark: #703380;
-
-
-// .bottom {
-// 	height:
-// 	overflow: hidden;
-// }
+@import "./variables.scss";
 
 footer {
 	position: fixed;
@@ -27,7 +13,7 @@ footer {
 
 	.footer-content {
 		opacity: 0;
-		color: #F0B3FF;
+		color: $clrLight;
 		font-size: 1rem;
 		transition-duration: .5s;
 		display: flex;

@@ -2,6 +2,7 @@
 .about, .contact, .login, .my-work, .student-work, .name {
 	animation-name: fadeIn, slideUp;
 	animation-duration: 1s;
+	animation-fill-mode: both;
 }
 
 // Animations
