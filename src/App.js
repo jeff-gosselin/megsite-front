@@ -18,12 +18,31 @@ import Contact from './components/pages/Contact';
 import Login from './components/pages/Login';
 
 class App extends Component {
+	state = {
+		prevPage: '',
+		currPage: ''
+	}
+
+	changePage = (page) => {
+		if (this.state.currPage.length > 0) {
+			this.setState({
+				prevPage: this.state.currPage
+			})
+		}
+		this.setState({
+			currPage: page
+		})
+	}
+
 	render() {
+		console.log("Page: ", this.state.prevPage);
+		console.log("Page: ", this.state.currPage);
+		
 		return (
 
 			<div className="App">
 				<div className="main">
-					<Navbar />
+					<Navbar changePage={this.changePage} />
 
 					<div className="main__content">
 						<Switch>

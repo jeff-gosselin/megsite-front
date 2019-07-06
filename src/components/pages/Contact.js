@@ -8,8 +8,8 @@ function Contact() {
 		<div className="contact">
 			<h2>Contact Page</h2>
 			<form className="contact__form">
-				<input className="contact__form-email" type="text" name="email" />
-				<textarea name="contact__form-message" rows="10" cols="30" />
+				<input className="contact__form-email" type="email" name="email" placeholder="Email Address" />
+				<textarea className="contact__form-message" rows="10" cols="30" placeholder="Message" />
 			</form>
 		</div>
 	)

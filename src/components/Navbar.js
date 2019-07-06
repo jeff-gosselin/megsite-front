@@ -12,15 +12,18 @@ class Navbar extends Component {
 		return (
 			<nav>
         <ul className="nav-links">
-					<li className="nav-links__one"><Link to="/"><FaHome className="home"/></Link></li>
-          <li><Link to="/about">About Me</Link></li>
-          <li><Link to="/my-work">My Work</Link></li>
-          <li><Link to="/student-work">Student Work</Link></li>
+					<li onClick={() => this.props.changePage("home")} className="nav-links__one"><Link to="/"><FaHome className="home"/></Link></li>
+          <li onClick={() => this.props.changePage("about")}><Link to="/about">About Me</Link></li>
+          <li onClick={() => this.props.changePage("my-work")}><Link to="/my-work">My Work</Link></li>
+          <li onClick={() => this.props.changePage("student-work")}><Link to="/student-work">Student Work</Link></li>
         </ul>
-        <Link to="/contact" className="nav-contact" href="#">Contact</Link>
+        <Link onClick={() => this.props.changePage("contact")} to="/contact" className="nav-contact" href="#">Contact</Link>
       </nav>
 		)
 	}
 }
 
 export default Navbar;
+
+// onClick={() => this.props.changePage("my-work")}
+// onClick={() => this.props.changePage("about")}
