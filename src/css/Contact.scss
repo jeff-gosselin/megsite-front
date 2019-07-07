@@ -6,33 +6,43 @@
 	align-items: center;
 	flex-direction: column;
 	width: 40vw;
-	padding: 40px;
-	margin: 1.2rem;
-	height: 75vh;
-	background-color: rgba(255,255,255, .75);
+	padding: 3%;
+	margin-top: 1.5rem;
+	min-height: 300px;
+	background-color: rgba(255,255,255, .95);
 	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
 
+	&__profile-label {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: auto 20px;
+	}
+
 	&__img {
-		width: 100px;
-		height: 100px;
+		width: 30vh;
+		height: 30vh;
 		border-radius: 50%;
 		background-image: url('https://static.makeuseof.com/wp-content/uploads/2015/11/perfect-profile-picture-all-about-face.jpg');
 		background-size: cover;
-		// flex: 0 0 25%;
-		// display: flex;
-		// justify-content: center;
-		// align-items: center;
+		background-position: center;
+		align-self: center;
+		flex-shrink: 0;
+		border: 4px solid $clrLight;
+		margin: 10px;
 	}
 
 	h1 {
 		// margin: 20px;
 		color: $clrDark;
+		font-size: 1.5rem;
 	}
 
 	form {
 		width: 100%;
 		// text-align: center;
 		display: flex;
+		flex:1;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -46,12 +56,23 @@
 		padding: .7rem;
 		border-radius: 3px;
 		border: 1px solid #aaa;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		color: $clrDark;
 		outline: none;
 	}
 
 	textarea {
 		height: 50%;
+	}
+}
+
+@media (max-height: 500px) {
+	.contact {
+		flex-direction: row;
+		width: 70vw;
+
+		&__profile-label {
+			margin-right: 60px;
+		}
 	}
 }
