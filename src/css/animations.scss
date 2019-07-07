@@ -1,8 +1,9 @@
 // Applied Animations
 .about, .contact, .login, .my-work, .student-work, .name {
 	animation-name: fadeIn, slideUp;
-	animation-duration: 1s;
+	animation-duration: .65s;
 	animation-fill-mode: both;
+	animation-timing-function: ease;
 }
 
 // Animations
@@ -12,6 +13,6 @@
 }
 
 @keyframes slideUp {
-	0% { transform: translateY(100%); }
-	100% { transform: translateY(0%); }
+	0% { transform: translateY(100%) rotate(30deg); }
+	100% { transform: translateY(0%) rotate(0deg); }
 }

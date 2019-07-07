@@ -37,12 +37,13 @@ class App extends Component {
 	render() {
 		console.log("Page: ", this.state.prevPage);
 		console.log("Page: ", this.state.currPage);
-		
+
 		return (
 
 			<div className="App">
+				<Navbar changePage={this.changePage} />
 				<div className="main">
-					<Navbar changePage={this.changePage} />
+
 
 					<div className="main__content">
 						<Switch>
@@ -54,9 +55,9 @@ class App extends Component {
 							<Route path="/" component={Brand} />
 						</Switch>
 					</div>
-
+					<Footer />
 				</div>
-				<Footer />
+
 			</div>
 
 
