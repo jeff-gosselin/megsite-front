@@ -15,7 +15,7 @@ function Contact() {
 			<form className="contact__form">
 
 				<input className="contact__form-email" type="email" name="email" placeholder="Email Address" />
-				<textarea className="contact__form-message" rows="8" cols="30" placeholder="Message" />
+				<textarea className="contact__form-message" placeholder="Message" />
 			</form>
 		</div>
 	)
