@@ -33,7 +33,7 @@
 	}
 
 	h1 {
-		// margin: 20px;
+		align-self: center;
 		color: $clrDark;
 		font-size: 1.5rem;
 	}
@@ -53,7 +53,7 @@
 		display: block;
 		width: 100%;
 		margin-top: 20px;
-		padding: .7rem;
+		padding: .6rem;
 		border-radius: 3px;
 		border: 1px solid #aaa;
 		font-size: 1.2rem;
@@ -62,17 +62,30 @@
 	}
 
 	textarea {
-		height: 50%;
+		height: 40%;
+		margin-bottom: 20px;
 	}
 }
 
-@media (max-height: 500px) {
+@media (max-height: 600px) {
 	.contact {
 		flex-direction: row;
 		width: 70vw;
 
 		&__profile-label {
 			margin-right: 60px;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.contact {
+		flex-direction: row;
+		width: 100vw;
+
+		&__profile-label {
+			margin-right: 60px;
+			display: none; // Porifile image disappears for mobile size
 		}
 	}
 }
