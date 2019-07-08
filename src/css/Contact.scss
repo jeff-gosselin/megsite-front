@@ -85,9 +85,9 @@
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 	.contact {
-		flex-direction: row;
+		flex-direction: column;
 		width: 100vw;
 
 		&__profile-label {
