@@ -1,0 +1,98 @@
+@import './variables.scss';
+
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 40vw;
+	padding: 3%;
+
+	margin-top: 1.5rem;
+	min-height: 300px;
+	background-color: rgba(255,255,255, .95);
+	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+
+	&__profile-label {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+
+	&__img {
+		width: 30vh;
+		height: 30vh;
+		border-radius: 50%;
+		background-image: url('https://static.makeuseof.com/wp-content/uploads/2015/11/perfect-profile-picture-all-about-face.jpg');
+		background-size: cover;
+		background-position: center;
+		align-self: center;
+		flex-shrink: 0;
+		border: 4px solid $clrLight;
+		margin: 10px;
+	}
+
+	h1 {
+		align-self: center;
+		color: $clrDark;
+		font-size: 1.5rem;
+		font-family: $font1;
+	}
+
+	form {
+		width: 100%;
+		display: flex;
+		flex:1;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	input, textarea {
+		display: block;
+		width: 100%;
+		margin-top: 6px;
+		padding: .6rem;
+		border-radius: 3px;
+		border: 1px solid $clrLight;
+		font-size: 1.2rem;
+		color: $clrMedium;
+		outline: none;
+	}
+
+	textarea {
+		min-height: 2.75rem;
+		height: 50%;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-height: 500px) {
+	.contact {
+		flex-direction: row;
+		width: 70vw;
+
+		&__profile-label {
+			margin-right: 60px;
+		}
+
+		textarea {
+			height: 50vh;
+		}
+
+	}
+}
+
+@media (max-width: 500px) {
+	.contact {
+		flex-direction: column;
+		width: 100vw;
+
+		&__profile-label {
+			margin-right: 60px;
+			display: none; // Porifile image disappears for mobile size
+		}
+	}
+}
